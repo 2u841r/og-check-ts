@@ -1,0 +1,30 @@
+{
+  "name": "og-check-ts",
+  "version": "0.1.0",
+  "description": "Fetch a URL and render its OpenGraph / Twitter Card metadata",
+  "type": "module",
+  "bin": {
+    "og-check-ts": "./dist/og-check.cjs"
+  },
+  "scripts": {
+    "build": "esbuild src/main.ts --bundle --platform=node --format=cjs --outfile=dist/og-check.cjs --banner:js='#!/usr/bin/env node'",
+    "postbuild": "chmod +x dist/og-check.cjs",
+    "typecheck": "tsc --noEmit",
+    "dev": "node --import tsx/esm src/main.ts"
+  },
+  "dependencies": {
+    "commander": "^12.0.0",
+    "htmlparser2": "^9.1.0",
+    "marked": "^12.0.0",
+    "marked-terminal": "^7.0.0"
+  },
+  "devDependencies": {
+    "@types/marked-terminal": "^6.1.1",
+    "@types/node": "^20.0.0",
+    "esbuild": "^0.21.0",
+    "typescript": "^5.4.0"
+  },
+  "engines": {
+    "node": ">=18.0.0"
+  }
+}
