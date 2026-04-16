@@ -1,6 +1,6 @@
 # og-check-ts
 
-Fetch a URL and render its OpenGraph / Twitter Card metadata. TypeScript port of [og-check](../og-check) (originally written in Zig).
+Fetch a URL and render its OpenGraph / Twitter Card metadata. TypeScript port of [og-check](https://github.com/deevus/neutils/tree/main/src/tools/og-check) (originally written in Zig).
 
 ## Requirements
 
@@ -145,7 +145,7 @@ Source layout:
 
 ## Credits
 
-TypeScript port of **[og-check](../og-check)** by [deevus](https://github.com/deevus), originally written in Zig. Core logic — meta tag parsing, namespace classification, renderer templates, Kitty protocol integration — is a faithful translation of the Zig source.
+TypeScript port of **[og-check](https://github.com/deevus/neutils/tree/main/src/tools/og-check)** by [deevus](https://github.com/deevus), originally written in Zig. Core logic — meta tag parsing, namespace classification, renderer templates, Kitty protocol integration — is a faithful translation of the Zig source.
 
 Differences from the Zig version:
 
