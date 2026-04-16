@@ -2,6 +2,7 @@
   "name": "og-check-ts",
   "version": "0.1.0",
   "description": "Fetch a URL and render its OpenGraph / Twitter Card metadata",
+  "license": "MIT",
   "type": "module",
   "bin": {
     "og-check-ts": "./dist/og-check.cjs"
